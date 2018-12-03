@@ -1,0 +1,9 @@
+@import 'config';
+@import "normalize-scss/sass/normalize/import-now";
+
+/* adicionales */
+@import 'layout';
+
+#cuerpo {
+    background-color: aqua;
+}

@@ -1,19 +1,28 @@
-*.log
-wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/mu-plugins/
-wp-content/wp-cache-config.php
-wp-content/plugins/hello.php
+## NPM
+node_modules
+node_modules/
+/node_modules/
+### carpetas prima
+# src
+# src/
+# /src/
+### carpeta distribución
+dist
+dist/
+/dist/
+### Respaldos
+*.7z
+# *.dmg
+*.gz
+# *.bz2
+# *.iso
+# *.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+# *.map
 
-/.htaccess
-/license.txt
-/readme.html
-/sitemap.xml
-/sitemap.xml.gz
+### adicional
+package-lock.json
 

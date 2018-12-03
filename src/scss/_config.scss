@@ -1,0 +1,71 @@
+/* CONFIGURACION */
+@charset "UTF-8";
+@import 'compass-mixins/lib/compass';
+// @import 'compass/css3';
+// @import "compass/utilities";
+// @import "compass/css3/transition";
+// @import "compass/css3/animation";
+// @import "compass/css3/images";
+@import "sass-rem/rem";
+@import "scut/dist/scut";
+// @import "media-queries";
+@import 'color';
+// @charset "UTF-8";
+// @import 'compass';
+// @import 'compass/css3';
+// @import "compass/utilities";
+// @import "compass/css3/transition";
+// @import "compass/css3/animation";
+// @import "compass/css3/images";
+// @import "rem";
+// @import "scut";
+// @import 'normalize';
+// @import "spice";
+// @import "media-queries";
+// @import 'color';
+// @import 'fuente';
+// @import 'mixies';
+/* config */
+$_metadata: ( //detalles basicos 
+theme-name: "FuenteWP 2018", // nombre 
+theme-uri: "http://www.unbuensocio.cl", //url
+theme-author: "Jose Vargas Molina", // autor
+theme-author-uri: "http://www.sociovirtual.com", // url autor
+theme-description: "Theme creado para unbuensocio", //describe sitio
+theme-version: "1.0.1", // version
+theme-license: "GPLv3", // licencia
+theme-license-uri: "http://www.gnu.org/licenses/gpl.txt", // detalle
+theme-tags: (responsive-layou), // tag
+theme-text-domain: "fuentewp", // text domian 
+theme-text-domain-path: "/languages/" // lenguaje directorio
+);
+// // color
+$_color: ( //
+texto: #000000, //
+body: #FFFFFF, // 
+link:#000000, // 
+hlink: darken(#FFcc00, 15%), //
+boton: #3C100C, //
+border: #000000, //
+negro: #000000, //
+blanco: #FFFFFF, //
+// menu:#3B3B3B, // 
+// choco: #795527, //
+// gris: lighten(#000000, 90), //
+//
+// cafe: #8A491C, //
+// cafe-oscuro: #3C100C, //
+// cafe-claro: #795527, //
+// // verde:#A1BB1A, //
+// // verde-dos:#9F4A47, //
+// // verde-oscuro: darken(#A1BB1A, 10%), //
+// // verde-claro: lighten(#A1BB1A, 5%), //
+// // naranjo: #FFCC00, //
+// // azul:#1779BA // 
+);
+// //texto
+$rem-baseline: 18px;
+// // media-queries
+$rem-desktop: rem(1280px);
+$rem-table: rem(640px);
+$rem-mobil: rem(320px);

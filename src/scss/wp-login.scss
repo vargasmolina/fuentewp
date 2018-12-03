@@ -1,0 +1,40 @@
+@import "config";
+/* https://codex.wordpress.org/Customizing_the_Login_Form */
+
+.login h1 a {
+    background: none;
+    background-image: url('./imagen/logo.gif');
+    background-repeat: no-repeat;
+    background-size: cover; // height: 100%;
+    overflow: hidden;
+    height: 100px;
+    width: 210px;
+    padding: 0;
+}
+
+.login h1:before,
+.login h1:after {
+    // font-family: $font-login;
+    color: #111111; // font-weight: 700;
+}
+
+.login h1:before {
+    display: block;
+    font-size: rem(44px);
+    // content: #{metadata(theme-name)}; // color: rgb(65, 180, 255);
+    padding-bottom: rem(10px);
+    // color: color(body);
+}
+
+.login h1:after {
+    display: block;
+    color: #111;
+    font-size: rem(1px);
+    margin-top: rem(5px);
+    line-height: rem(24px);
+}
+
+body.login div#login form#loginform p.submit input#wp-submit {
+    // background-color: color(body);
+    // color: color(alink);
+}
