@@ -4,6 +4,24 @@
 /* adicionales */
 @import 'layout';
 
-#cuerpo {
-    background-color: aqua;
+// #cuerpo {
+//     background-color: aqua;
+// }
+
+/* cambio tamano logo */
+.sticky {
+    background-color: color(blanco);
+    border-bottom: rem(1px) solid color(negro);
+
+    #logo {
+        img {
+            width: 50%;
+            height: 50%;
+            // @include scale(0.5);
+            @include transition-property(all);
+            @include transition-duration(0.5s);
+            @include transition-timing-function(ease-in-out);
+        }
+    }
+
 }

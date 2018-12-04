@@ -16,8 +16,10 @@ define( 'DIR_WIDGET', get_template_directory() . '/widgets/' );
 #carga basico theme
 require_once(DIR_THEME.'cleanup.php');
 require_once(DIR_THEME.'enqueue-scripts.php');
+require_once(DIR_THEME.'wp-plugins.php');
+
+if ( file_exists( WP_PLUGIN_DIR.'/kirki/kirki.php' ) ) { require_once(DIR_THEME.'wp-customizer.php'); }
 // require_once(DIR_THEME.'wp-styles.php');
-// require_once(DIR_THEME.'wp-customizer.php');
 // require_once(PATH_LIBS.'wp-breadcrumb.php');
 // require_once(DIR_THEME.'wp-paginacion.php');
 // require_once(DIR_THEME.'wp-menu.php');
