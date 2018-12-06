@@ -1,14 +1,5 @@
 <?php
 /**
- * Loop Name: LOOPS ENTRADA
- */
-// global $wp_query;
-// var_dump($wp_query->query_vars);
-// $total_paginas = $wp_query->max_num_pages;
-?>
-
-<?php
-/**
  * Loop Name: LOOPS ENTRADAS
  */
 
@@ -19,9 +10,10 @@ $total_paginas = $wp_query->max_num_pages;
 
 <?php if ( have_posts() ) : ?>
 
-<div id="entradas"> 
-	<?php /* Start the Loop */ ?>
-	<?php while ( have_posts() ) : the_post(); $i++; ?>
+<div class="entradas"> 
+	<?php /* Start the Loop */ 
+	while ( have_posts() ) : the_post(); $i++; 
+	?>
 
 
 	<?php if( has_post_thumbnail() ) : ?>
@@ -30,13 +22,14 @@ $total_paginas = $wp_query->max_num_pages;
 		</a>
 	<?php endif; ?>
 
-	<?php the_title(); the_excerpt(); ?>
-
+	<?php the_title();?>
+	<? the_excerpt(); ?>
+	<a class="grid-thumbnail" href="<?php the_permalink() ?>"> Ver mas </a>
 
 	<?php endwhile; ?>
 </div>
 
-<?php pagination($total_paginas, false, 10);  ?>
+<?php // pagination($total_paginas, false, 2);  ?>
 
 <?php else : ?>
 

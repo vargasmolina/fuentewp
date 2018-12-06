@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php 
+/*
+Template Name: Full-width Pagina
+Template Post Type: post, page
+*/
+
+get_header(); ?>
 <section> 
     <?php
         // Start the loop.
@@ -7,6 +13,4 @@
         endwhile;
     ?>
 </section>
-<aside> <? dynamic_sidebar( 'lateral-widgets' ); ?> </aside>
-
 <?php get_footer(); ?>

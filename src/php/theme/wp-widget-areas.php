@@ -41,6 +41,17 @@ function fuentewp_widgets() {
       'after_title' => '</div>',
     ));
 
+// #################// header
+register_sidebar(array(
+  'id' => 'lateral-widgets',
+  'name' => __( 'Lateral', 'textdomain' ),
+  'description' => __( 'contenedor lateral del sitio', 'textdomain' ),
+  'before_widget' => '<div id="%1$s" class="widget-bloque %2$s">',
+  'after_widget' => '</div>',
+  'before_title'  => '<div class="widget-title">',
+  'after_title' => '</div>',
+));
+
   
 }
 
