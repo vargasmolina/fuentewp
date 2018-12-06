@@ -3,6 +3,7 @@
 
 /* adicionales */
 @import 'layout';
+@import 'menus';
 
 // #cuerpo {
 //     background-color: aqua;
@@ -25,3 +26,83 @@
     }
 
 }
+
+/* scroll top */
+footer {
+    #return-to-top {
+        position: fixed;
+        bottom: rem(20px);
+        right: rem(20px);
+        // background: rgb(0, 0, 0);
+        // background: rgba(0, 0, 0, 0.7);
+        // background-color: color(link);
+        width: rem(50px);
+        height: rem(50px);
+        display: block;
+        text-decoration: none;
+        @include scut-circle(rem(50px), color(link));
+        // -webkit-border-radius: 35px;
+        // -moz-border-radius: 35px;
+        // border-radius: 35px;
+        // display: none;
+        // @include border-radius(rem(35px));
+        // -webkit-transition: all 0.3s linear;
+        // -moz-transition: all 0.3s ease;
+        // -ms-transition: all 0.3s ease;
+        // -o-transition: all 0.3s ease;
+        // transition: all 0.3s ease;
+        @include transition-property(all);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in-out);
+
+        i {
+            // color: color(blanco);
+            position: relative;
+            display: inline-block;
+            // left: rem(16px);
+            // top: rem(1px);
+            @include scut-triangle(up, rem(30px 30px), color(hlink));
+            // font-size: rem(48px);
+            // top: rem(12px);
+            @include scut-center-transform;
+
+
+        }
+
+        &:hover {
+            background-color: color(hlink);
+
+            i {
+
+                top: rem(10px);
+                border-bottom-color: color(link);
+
+            }
+        }
+    }
+
+
+}
+
+// #return-to-top i {
+//     color: color(negro);
+//     margin: 0;
+//     position: relative;
+//     left: 16px;
+//     top: 13px;
+//     font-size: 19px;
+//     -webkit-transition: all 0.3s ease;
+//     -moz-transition: all 0.3s ease;
+//     -ms-transition: all 0.3s ease;
+//     -o-transition: all 0.3s ease;
+//     transition: all 0.3s ease;
+// }
+
+// #return-to-top:hover {
+//     background: rgba(0, 0, 0, 0.9);
+// }
+
+// #return-to-top:hover i {
+//     color: #fff;
+//     top: 5px;
+// }

@@ -21,10 +21,12 @@ require_once(DIR_THEME.'wp-plugins.php');
 if ( file_exists( WP_PLUGIN_DIR.'/kirki/kirki.php' ) ) { require_once(DIR_THEME.'wp-customizer.php'); }
 // require_once(DIR_THEME.'wp-styles.php');
 // require_once(PATH_LIBS.'wp-breadcrumb.php');
-// require_once(DIR_THEME.'wp-paginacion.php');
+require_once(DIR_THEME.'wp-paginacion.php');
 // require_once(DIR_THEME.'wp-menu.php');
 require_once(DIR_THEME.'wp-widget-areas.php');
 require_once(DIR_THEME.'wp-no-comentario.php');
-// require_once(DIR_THEME.'wp-adicional.php');
-
+require_once(DIR_THEME.'wp-adicional.php');
+require_once(DIR_THEME.'wp-imagen.php');
+//  adicional widget 
+// require_once(DIR_WIDGET.'menu-movil/widget.php');
 ?>

@@ -29,13 +29,19 @@ if ( ! function_exists( 'fuentewp_scripts' ) ) :
 	wp_deregister_style('fuentewp-general');
 	wp_enqueue_style( 'fuentewp-general', get_stylesheet_directory_uri() . '/general.css', array(), '0.0.3' , 'all' );
 
-// ################################## ICONO GOOGLE
-// 	wp_deregister_style('material-icons');
-// 	wp_enqueue_style( 'material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons', array(), '4.5.0' , 'all' );
+// ################################## ICONO GOOGLE https://fonts.googleapis.com/icon?family=Material+Icons
+	wp_deregister_style('material-icons');
+	wp_enqueue_style( 'material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons', array(), '3.0.1' , 'all' );
 
 // ################################## JQUERY
 	wp_deregister_script( 'jquery' );
 	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', array(), '3.3.1', false );
+
+	// https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js
+
+// // ################################## Carga Imagen
+// 	wp_deregister_script( 'imagesloaded' );
+// 	wp_enqueue_script( 'imagesloaded', 'https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js', array(), '4.1.4', false );
 
 ################################## GENERAL JAVASCRIPTS
 	wp_deregister_script( 'wp-embed' );

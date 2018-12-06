@@ -11,12 +11,22 @@ function greatmag_recommend_plugin() {
         'name'               => 'Page Builder by SiteOrigin',
         'slug'               => 'siteorigin-panels',
         'required'           => true,
+        'force_activation'   => true,
     );
+/* https://cl.wordpress.org/plugins/so-widgets-bundle/ */
+$plugins[] = array(
+    'name'               => 'SiteOrigin Widgets Bundle',
+    'slug'               => 'so-widgets-bundle',
+    'required'           => true,
+    'force_activation'   => true,
+);
+
 /* https://wordpress.org/plugins/kirki/ */
     $plugins[] = array(
         'name'               => 'Kirki',
         'slug'               => 'kirki',
         'required'           => true,
+        'force_activation'   => true,
     );
 
 /* https://wordpress.org/plugins/meta-box/ */
@@ -24,6 +34,7 @@ function greatmag_recommend_plugin() {
         'name'               => 'Meta Box – WordPress Custom Fields Framework',
         'slug'               => 'meta-box',
         'required'           => true,
+        'force_activation'   => true,
     );
 
     tgmpa( $plugins);
